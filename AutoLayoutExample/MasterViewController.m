@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.objects = @[@"Basic", @"CustomOutlets"];
+    self.objects = @[@"WithoutConstraints", @"WithConstraints", @"CustomOutlets"];
 }
 
 - (void)didReceiveMemoryWarning {
