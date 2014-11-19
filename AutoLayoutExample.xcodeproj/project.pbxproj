@@ -15,6 +15,7 @@
 		20252C721A1C6A5600BFA301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20252C711A1C6A5600BFA301 /* Images.xcassets */; };
 		20252C751A1C6A5600BFA301 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20252C731A1C6A5600BFA301 /* LaunchScreen.xib */; };
 		20252C811A1C6A5600BFA301 /* AutoLayoutExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20252C801A1C6A5600BFA301 /* AutoLayoutExampleTests.m */; };
+		20252C8D1A1C6CD800BFA301 /* MSCustomOutletsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20252C8C1A1C6CD800BFA301 /* MSCustomOutletsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		20252C7A1A1C6A5600BFA301 /* AutoLayoutExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20252C7F1A1C6A5600BFA301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20252C801A1C6A5600BFA301 /* AutoLayoutExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutExampleTests.m; sourceTree = "<group>"; };
+		20252C8B1A1C6CD800BFA301 /* MSCustomOutletsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCustomOutletsViewController.h; sourceTree = "<group>"; };
+		20252C8C1A1C6CD800BFA301 /* MSCustomOutletsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCustomOutletsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		20252C601A1C6A5600BFA301 /* AutoLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				20252C8A1A1C6A6200BFA301 /* Examples */,
 				20252C651A1C6A5600BFA301 /* AppDelegate.h */,
 				20252C661A1C6A5600BFA301 /* AppDelegate.m */,
 				20252C681A1C6A5600BFA301 /* MasterViewController.h */,
@@ -122,6 +126,15 @@
 				20252C7F1A1C6A5600BFA301 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		20252C8A1A1C6A6200BFA301 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				20252C8B1A1C6CD800BFA301 /* MSCustomOutletsViewController.h */,
+				20252C8C1A1C6CD800BFA301 /* MSCustomOutletsViewController.m */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20252C8D1A1C6CD800BFA301 /* MSCustomOutletsViewController.m in Sources */,
 				20252C671A1C6A5600BFA301 /* AppDelegate.m in Sources */,
 				20252C6A1A1C6A5600BFA301 /* MasterViewController.m in Sources */,
 				20252C641A1C6A5600BFA301 /* main.m in Sources */,
