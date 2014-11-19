@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RMx-3f-FxP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -183,20 +184,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpT-ea-C2R" userLabel="ButtonOnLeft">
-                                <rect key="frame" x="55" y="165" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpT-ea-C2R" userLabel="ButtonOnLeft">
+                                <rect key="frame" x="77" y="165" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slU-Rg-EPo" userLabel="ButtonOnRight">
-                                <rect key="frame" x="222" y="165" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slU-Rg-EPo" userLabel="ButtonOnRight">
+                                <rect key="frame" x="226" y="165" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="slU-Rg-EPo" firstAttribute="top" secondItem="bJZ-ZN-8kj" secondAttribute="bottom" constant="165" id="asT-iu-h62"/>
+                            <constraint firstItem="slU-Rg-EPo" firstAttribute="leading" secondItem="KpT-ea-C2R" secondAttribute="trailing" constant="103" id="rF3-V1-eCS"/>
+                            <constraint firstItem="KpT-ea-C2R" firstAttribute="top" secondItem="bJZ-ZN-8kj" secondAttribute="bottom" constant="165" id="sgE-8x-rtz"/>
+                            <constraint firstItem="KpT-ea-C2R" firstAttribute="leading" secondItem="7g5-gX-r11" secondAttribute="leadingMargin" constant="61" id="t9A-fc-716"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tXj-Vm-ePm"/>
                     <nil key="simulatedStatusBarMetrics"/>
