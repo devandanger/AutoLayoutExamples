@@ -24,6 +24,7 @@
 		20252CAE1A1C700300BFA301 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20252CA31A1C700300BFA301 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		20252CAF1A1C700300BFA301 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20252CA51A1C700300BFA301 /* View+MASAdditions.m */; };
 		20252CB21A1C703200BFA301 /* MSMasonryExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20252CB11A1C703200BFA301 /* MSMasonryExampleViewController.m */; };
+		20252CB51A1C869500BFA301 /* MSClassicCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20252CB41A1C869500BFA301 /* MSClassicCaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,8 @@
 		20252CA61A1C700300BFA301 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		20252CB01A1C703200BFA301 /* MSMasonryExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMasonryExampleViewController.h; sourceTree = "<group>"; };
 		20252CB11A1C703200BFA301 /* MSMasonryExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMasonryExampleViewController.m; sourceTree = "<group>"; };
+		20252CB31A1C869500BFA301 /* MSClassicCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSClassicCaseViewController.h; sourceTree = "<group>"; };
+		20252CB41A1C869500BFA301 /* MSClassicCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSClassicCaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				20252C8C1A1C6CD800BFA301 /* MSCustomOutletsViewController.m */,
 				20252CB01A1C703200BFA301 /* MSMasonryExampleViewController.h */,
 				20252CB11A1C703200BFA301 /* MSMasonryExampleViewController.m */,
+				20252CB31A1C869500BFA301 /* MSClassicCaseViewController.h */,
+				20252CB41A1C869500BFA301 /* MSClassicCaseViewController.m */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				20252C671A1C6A5600BFA301 /* AppDelegate.m in Sources */,
 				20252CA81A1C700300BFA301 /* MASConstraint.m in Sources */,
 				20252CAA1A1C700300BFA301 /* MASLayoutConstraint.m in Sources */,
+				20252CB51A1C869500BFA301 /* MSClassicCaseViewController.m in Sources */,
 				20252CAD1A1C700300BFA301 /* NSArray+MASAdditions.m in Sources */,
 				20252CAC1A1C700300BFA301 /* MASViewConstraint.m in Sources */,
 				20252CAB1A1C700300BFA301 /* MASViewAttribute.m in Sources */,

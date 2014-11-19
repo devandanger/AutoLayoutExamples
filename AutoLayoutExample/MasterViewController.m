@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "MSClassicCaseViewController.h"
 
 @interface MasterViewController ()
 
@@ -15,28 +16,11 @@
 
 @implementation MasterViewController
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        self.clearsSelectionOnViewWillAppear = NO;
-        self.preferredContentSize = CGSizeMake(320.0, 600.0);
-    }
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.objects = @[@"WithoutConstraints", @"WithConstraints", @"CustomOutlets", @"ResolvingAmbiguity"];
+    self.objects = @[@"WithoutConstraints", @"WithConstraints", @"ResolvingAmbiguity", @"ClassicCase", @"CustomOutlets"];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - Segues
-
 
 #pragma mark - Table View
 
@@ -54,6 +38,18 @@
 
     cell.textLabel.text = cellIdentifier;
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    
+    if([segue.identifier isEqualToString:@"ClassicCase"]) {
+        MSClassicCaseViewController *controller = [segue destinationViewController];
+        controller.article = @"Hey here is another article on barn cats";
+        controller.content = @"Leggings sustainable Brooklyn tousled. Shabby chic sartorial High Life, street art brunch pug freegan next level cardigan fashion axe mixtape chia viral whatever cred. Semiotics lomo squid, Helvetica whatever fashion axe mlkshk Godard readymade Marfa pickled health goth Pinterest narwhal. Carles listicle bespoke, Etsy chambray sustainable pork belly street art farm-to-table leggings lumbersexual biodiesel. Wayfarers +1 crucifix, twee 8-bit Odd Future Pitchfork Tumblr sartorial slow-carb whatever. Letterpress freegan cornhole, Vice meggings viral fap pug master cleanse Carles iPhone. Authentic Truffaut try-hard Neutra bespoke fashion axe.";
+        controller.authorName = @"Evan Anger";
+        controller.published = @"Published 11/04/2014 Painesville, OH";
+    }
 }
 
 
