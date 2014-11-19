@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.objects = @[@"WithoutConstraints", @"WithConstraints", @"ResolvingAmbiguity", @"ClassicCase", @"CustomOutlets"];
+    self.objects = @[@"WithoutConstraints", @"WithConstraints", @"ResolvingAmbiguity", @"ClassicCase", @"CustomOutlets", @"ProgrammableConstraints"];
 }
 
 #pragma mark - Table View

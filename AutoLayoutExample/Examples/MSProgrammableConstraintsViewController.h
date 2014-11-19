@@ -1,5 +1,5 @@
 //
-//  MSMasonryExampleViewController.h
+//  MSProgrammableConstraintsViewController.h
 //  AutoLayoutExample
 //
 //  Created by Evan Anger on 11/19/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MSMasonryExampleViewController : UIViewController
+@interface MSProgrammableConstraintsViewController : UIViewController
 
 @end
