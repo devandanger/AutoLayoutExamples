@@ -9,14 +9,16 @@
 #import "MSCustomOutletsViewController.h"
 
 @interface MSCustomOutletsViewController ()
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topPadding;
+@property (assign, nonatomic) CGFloat startPadding;
 @end
 
 @implementation MSCustomOutletsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.startPadding = self.topPadding.constant;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +35,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)stepper:(UIStepper *)sender {
+    double value = [sender value];
+    self.topPadding.constant = self.startPadding + (value * 10);
+}
 
 @end

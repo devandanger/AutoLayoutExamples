@@ -317,9 +317,35 @@
                     <view key="view" contentMode="scaleToFill" id="zsh-Fk-t9W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm moving!1!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPP-8o-v9C">
+                                <rect key="frame" x="144" y="79" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="n95-ba-NoF">
+                                <rect key="frame" x="36" y="270" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepper:" destination="YdD-x0-AYu" eventType="valueChanged" id="wMo-f1-jfp"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n95-ba-NoF" firstAttribute="leading" secondItem="zsh-Fk-t9W" secondAttribute="leadingMargin" constant="20" id="2gK-Ts-NNU"/>
+                            <constraint firstAttribute="centerY" secondItem="n95-ba-NoF" secondAttribute="centerY" id="KXJ-fV-U0D"/>
+                            <constraint firstItem="GPP-8o-v9C" firstAttribute="leading" secondItem="zsh-Fk-t9W" secondAttribute="leadingMargin" constant="128" id="PbY-Z1-J15"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GPP-8o-v9C" secondAttribute="trailing" constant="46" id="WTc-q1-a7R"/>
+                            <constraint firstItem="GPP-8o-v9C" firstAttribute="top" secondItem="j3o-MD-mGX" secondAttribute="bottom" constant="79" id="dZS-4o-r0w"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dFC-oG-fVH"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="topPadding" destination="dZS-4o-r0w" id="cBI-iL-P90"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD4-ND-ReK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
